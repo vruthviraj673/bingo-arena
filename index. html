@@ -1,69 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BINGO ARENA</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: #0b1020;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: grid;
-      place-items: center;
-      text-align: center;
-    }
-
-    .container {
-      padding: 30px;
-      width: min(90%, 420px);
-      background: #171d35;
-      border-radius: 20px;
-      box-shadow: 0 0 30px #5735a5;
-    }
-
-    h1 {
-      color: #a78bfa;
-      font-size: 36px;
-    }
-
-    p {
-      color: #cbd5e1;
-    }
-
-    button {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin-top: 15px;
-      border: none;
-      border-radius: 10px;
-      background: #7c3aed;
-      color: white;
-      font-size: 17px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="container">
     <h1>🎱 BINGO ARENA</h1>
     <p>Play Bingo with friends online!</p>
 
-    <button onclick="alert('Create Room coming soon!')">
+    <button onclick="createRoom()">
       Create Room
     </button>
 
-    <button onclick="alert('Join Room coming soon!')">
+    <button onclick="joinRoom()">
       Join Room
     </button>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
